@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="18dp"
-        android:text="Your Name:"
+        android:text="Name:"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
@@ -22,30 +22,31 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/TxtName"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:imeOptions="actionDone"
+            android:hint="Your Name" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="18dp"
             android:background="#0095ff"
+            android:onClick="goName"
             android:text="update" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="18dp"
-        android:text="Your Email:" />
+        android:text="Email:" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,29 +54,31 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/TxtEmail"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionDone"
+            android:hint="Your email"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="18dp"
             android:background="#0095ff"
+            android:onClick="goEmail"
             android:text="update" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="18dp"
-        android:text="Your Number phone:" />
+        android:text="Number phone:" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -83,24 +86,27 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/TxtPhone"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="phone" />
+            android:inputType="phone"
+            android:imeOptions="actionDone"
+            android:hint="your number phone"/>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="18dp"
             android:background="#0095ff"
+            android:onClick="goPhone"
             android:text="update" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtViewName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -108,7 +114,7 @@
         android:text="Your Name:" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtViewEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -117,7 +123,7 @@
         android:text="Your Email:" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtViewPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
